@@ -1,0 +1,181 @@
+/*
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+}
+*/
+
+body{
+    /* Color de fondo */
+   background: linear-gradient(rgba(207, 192, 28, 0.947), rgba(65, 202, 65, 0.968)); 
+    /* Cambio de tipografía */
+    font-family: 'Lilita One', cursive; 
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+
+}
+
+
+.container{
+    display: flex;
+    max-width: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 0%;
+    /*background: linear-gradient(rgba(89, 255, 194, 0.8), rgba(255, 230, 118, 0.473)); */
+}
+
+
+header{
+    background-color:darkseagreen;
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+    z-index: 100;
+    
+}
+
+.menu{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navegacion{
+    float: right;
+
+}
+
+.navegacion ul li{
+       list-style: none;
+       margin-left: 75px;
+       padding: 12px 0;
+       float: left;
+       position: relative;
+     
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.navegacion ul li a::before{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    text-decoration: none;
+    content: '';
+}
+
+.navegacion ul li a:hover{
+        color:darkkhaki;
+        transition: all .3s;
+}
+
+
+img{
+    /* Cambiar tamaño de imágenes */
+    /* anchura */
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 6px;
+    
+}
+
+/* cuando posicionamos el puntero del raton sobre un objeto */
+img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05);
+    transform: rotate(-1.2deg) scale(1.05);
+    transition: 0.6s ease-out;
+    filter: grayscale(0.9);
+}
+
+.contenedor{
+    display: flex;
+}
+
+.imagen{
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+p{
+    /* Color del texto */
+    color:rgb(36, 36, 248);  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h3{
+    color:darkmagenta;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    background: linear-gradient(pink, purple);
+    -webkit-background-clip: text;
+     color: transparent;  
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 35px;
+}
+
+.p ul li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+    /* Al editar una CLASE tiene que ir un punto antes */
+/*.a-azteca{
+    /* Color del texto 
+    color: black;*/
+
+     .main-title{ 
+    /* font-family: 'Franklin Gothic Medium', 'Arial   Narrow', Arial, sans-serif; */
+     /* Cambiar tamaño de texto */  
+     font-family: 'Lilita One', cursive;
+     /* text-align:left;
+     color: rgb(69, 139, 0);
+     font-size: 50px; */
+     text-align: center;
+     font-size: 50px;
+     background: linear-gradient(red, yellow, black );
+     color: transparent;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     animation: text 5s linear infinite;  
+}
+
+@keyframes text {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+a{
+    /* Color de texto */
+    color:darkgreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Línea debajo de la ancla */
+    text-decoration: none;
+}
+
